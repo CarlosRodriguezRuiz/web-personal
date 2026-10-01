@@ -1,38 +1,65 @@
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi web personal</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Mis proyectos</h1>
-        <h2>Proyectos que he realizado:</h2>
+      <div>
+        <h1>Portfolio</h1>
+      </div>
+      <img id="iconoPerfil" src="img/iconoPerfil.png" alt="" />
     </header>
+    <div id="div1">
+      <p>Actividades que he realizado:</p>
+    </div>
 
-    <section>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <div id="navegadorYcontenido">
+      <aside>
+        <nav id="navegador">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a  class="subrayado" href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-        <main>
-            <section>
-                <article>
-                    <h3>Web liga de fútbol</h3>
-                    <p>He creado una web para gestionar una liga local de fútbol.</p>
-
-                    <div>
-                        <img src="img/LogoF7App.png" alt="Logo de la web">
-                        <img src="img/LogoClubFutbol.png" alt="Logo del equipo de fútbol Moralzarzal">
-                        <img src="img/LogoAyunta.png" alt="Logo del Ayuntamiento de Moralzarzal">
-                    </div>
-                </article>
-            </section>
-        </main>
-    </section>
-
+      <article id="hobies">
+        <div>
+          <h2>Aerea BMX</h2>
+          <img src="img/bmx1.png" alt="" />
+        </div>
+        <div>
+          <h2>Aerea no hands</h2>
+          <iframe
+            src="https://www.youtube.com/embed/z0EUDqSR320?si=js24JpeLV2wlFyHK"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+        <div>
+          <h2>Campo de rugby Paraninfo</h2>
+          <img src="img/rugby.png" alt="" />
+        </div>
+        <div>
+          <h2>Mount bike</h2>
+          <img src="img/mountBike.png" alt="" />
+        </div>
+      </article>
+    </div>
+    <nav id="navMovil">
+      <a href="index.html"><img src="img/inicioIcono.png" alt="" /></a>
+      <a href="biografia.html"><img src="img/biografiaIcono.png" alt="" /></a>
+      <img src="img/portfolioIconoNegro.png" alt="" />
+      <a href="contacto.html"><img src="img/contactoIcono.png" alt="" /></a>
+    </nav>
     <footer>
-        <p>Web personal de Carlos Rodríguez Ruiz</p>
+      <p>Web personal de Carlos Rodríguez Ruiz</p>
     </footer>
-</body>
+  </body>
+</html>

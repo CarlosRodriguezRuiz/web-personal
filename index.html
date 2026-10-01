@@ -1,36 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi web personal</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
+      <div>
         <h1>Mi Web Personal</h1>
-        <p>Último ejercicio antes del módulo 1</p>
+      </div>
+      <img id="iconoPerfil" src="img/iconoPerfil.png" alt="" />
     </header>
+    <div id="div1">
+      <p>Último ejercicio antes del módulo 1</p>
+    </div>
+    <div id="navegadorYcontenido">
+      <aside>
+        <nav id="navegador">
+          <ul>
+            <li><a  class="subrayado" href="index.html">Home</a></li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <section>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <main>
-            <h2>Bienvenido a mi web personal</h2>
-            <p>En esta página puedes conocer un poco más sobre mí, mis proyectos y cómo contactar conmigo.</p>
-        </main>
-    </section>
-
+      <article id="contenidoPrimeraPag">
+        <h2>Bienvenido a mi web personal</h2>
+        <p>
+          En esta página puedes conocer un poco más sobre mí, mis proyectos y
+          cómo contactar conmigo.
+        </p>
+      </article>
+    </div>
+    <nav id="navMovil">
+      <img src="img/inicioIconoNegro.png" alt="" />
+      <a href="biografia.html"><img src="img/biografiaIcono.png" alt="" /></a>
+      <a href="portfolio.html"><img src="img/portfolioIcono.png" alt="" /></a>
+      <a href="contacto.html"><img src="img/contactoIcono.png" alt="" /></a>
+    </nav>
     <footer>
-        <p>Web personal de Carlos Rodríguez Ruiz</p>
+      <p>Web personal de Carlos Rodríguez Ruiz</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,386 @@
+/*
+ *  Inicio
+ *
+ */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  background-color: rgb(87, 109, 64);
+}
+#iconoPerfil {
+  height: 100px;
+  width: 100px;
+}
+#navegador {
+  min-height: 100%;
+}
+
+#navegador ul {
+  list-style: none;
+  margin: 0;
+  padding: 30px 20px;
+  background-color: rgb(6, 70, 70);
+  min-height: 500px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0 0 20px 0;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#navegador a {
+  display: block;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+}
+
+#navegador a.subrayado {
+  text-decoration: underline;
+}
+
+#div1 {
+  text-align: center;
+  color: beige;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contenidoPrimeraPag {
+  margin-left: 10%;
+}
+#navegadorYcontenido {
+  display: flex;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #4caf50;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#navMovil {
+  display: none;
+}
+
+
+/*
+ * Movil
+ *
+ */
+
+@media (max-width: 800px) {
+  #navMovil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: 70px;
+
+    background-color: #222;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+
+    z-index: 1000;
+  }
+
+  #navMovil a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+  }
+
+
+  #navMovil img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #navegador {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 110px;
+  }
+}
+
+
+
+/*
+ *  Biografia
+ *
+ */
+
+#biografia {
+  margin: 5%;
+  max-width: 900px;
+}
+
+#biografia section {
+  margin-bottom: 40px;
+}
+
+#biografia h2 {
+  margin-bottom: 15px;
+}
+
+#biografia p {
+  line-height: 1.6;
+}
+
+#imagenBiografia {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ *  Portfolio
+ *
+ */
+#hobies iframe {
+  width: 100%;
+  height: 400px;
+  width: 400px;
+}
+#hobies img {
+  height: 400px;
+  width: 400px;
+}
+#hobies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#hobies div {
+  margin: 10px 10px 10px 10px;
+}
+#hobies div h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: -15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: azure;
+  background-color: rgb(2, 0, 2);
+}
+@media (max-width: 800px) {
+  #hobies {
+    padding-bottom: 50px;
+  }
+  #hobies iframe {
+    width: 100%;
+    height: 250px;
+    width: 250px;
+  }
+  #hobies img {
+    height: 250px;
+    width: 250px;
+  }
+  #hobies div h2 {
+    font-size: medium;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-bottom: -15px;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: azure;
+    background-color: rgb(2, 0, 2);
+  }
+}
+@media (max-width: 630px) {
+  #hobies iframe {
+    width: 100%;
+    height: 200px;
+    width: 200px;
+  }
+  #hobies img {
+    height: 200px;
+    width: 200px;
+  }
+  #hobies div h2 {
+    font-size: smaller;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-bottom: -15px;
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: azure;
+    background-color: rgb(2, 0, 2);
+  }
+}
+
+/*
+ *  Contacto
+ *
+ */
+#contactame {
+  padding-left: 5%;
+}
+#divForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+#imgContactame {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+#formParte1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nombrEmailTlfn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#nombrEmailTlfn label {
+  margin-left: -50px;
+  padding-left: 80px;
+}
+#nombrEmailTlfn input {
+  height: 20px;
+  width: 120px;
+}
+#motContacto {
+  padding-top: 3%;
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+}
+#motContacto select {
+  margin-right: 20px;
+  height: 20px;
+}
+#mensaje {
+  width: 600px;
+  margin-right: 150px;
+}
+#aceptarPolitica {
+  padding-top: 10px;
+  padding-right: 25%;
+  text-align: end;
+}
+
+
+@media (max-width: 800px) {
+
+  #navegadorYcontenido {
+    display: block;
+  }
+
+  #divForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #formParte1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nombrEmailTlfn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nombrEmailTlfn label {
+    margin-top: 10px;
+  }
+
+  #nombrEmailTlfn input {
+    width: 95%;
+    height: 30px;
+  }
+
+  #motContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  #motContacto select {
+    margin-bottom: 10px;
+  }
+
+  #mensaje {
+    width: 95%;
+    height: 100px;
+    margin-right: 0;
+  }
+
+  #aceptarPolitica {
+    padding-right: 0;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  #imgContactame {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  footer {
+    padding-bottom: 80px;
+  }
+}

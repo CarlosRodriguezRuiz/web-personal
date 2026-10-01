@@ -1,36 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biografía</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <header>
+      <div>
         <h1>Biografía</h1>
-        <h3>Sobre mí:</h3>
-        <p>Mi nombre es Carlos Rodríguez Ruiz, he vivido en Madrid toda mi vida.</p>
+      </div>
+
+      <img
+        id="iconoPerfil"
+        src="img/iconoPerfil.png"
+        alt="Icono de perfil"
+      />
     </header>
 
-    <section>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <div id="div1">
+      <p>Mi vida:</p>
+    </div>
 
-        <main>
-            <img src="img/bici.jpg" alt="Montando en BMX">
-        </main>
-    </section>
+    <div id="navegadorYcontenido">
+
+      <aside>
+        <nav id="navegador">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  class="subrayado" href="biografia.html">Biografía</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article id="biografia">
+
+        <section>
+          <h2>Sobre mí</h2>
+
+          <p>
+            Me llamo Carlos Rodríguez Ruiz y siempre me ha gustado aprender
+            cosas nuevas, especialmente relacionadas con la tecnología,
+            el deporte y el desarrollo de proyectos.
+          </p>
+
+          <p>
+            Actualmente estoy orientando mi formación hacia el desarrollo de
+            software, especialmente en tecnologías como Java, Spring Boot,
+            bases de datos y desarrollo de aplicaciones.
+          </p>
+        </section>
+
+        <section>
+          <h2>Mi formación</h2>
+
+          <p>
+            He estudiado Integración Social y posteriormente Desarrollo de
+            Aplicaciones Multiplataforma. Durante esta etapa he trabajado con
+            diferentes tecnologías y he realizado proyectos tanto individuales
+            como en equipo.
+          </p>
+        </section>
+
+        <section>
+          <h2>Mis intereses</h2>
+
+          <ul>
+            <li>Programación y desarrollo de aplicaciones</li>
+            <li>Backend con Java y Spring Boot</li>
+            <li>Inteligencia artificial aplicada al desarrollo</li>
+            <li>Ciclismo y BMX</li>
+            <li>Fútbol</li>
+            <li>Fotografía</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Una de mis aficiones</h2>
+
+          <img
+            id="imagenBiografia"
+            src="img/bici.jpg"
+            alt="Montando en BMX"
+          />
+        </section>
+
+      </article>
+
+    </div>
+
+    <nav id="navMovil">
+      <a href="index.html">
+        <img src="img/inicioIconoNegro.png" alt="Inicio" />
+      </a>
+
+      <a href="biografia.html">
+        <img src="img/biografiaIconoNegro.png" alt="Biografía" />
+      </a>
+
+      <a href="portfolio.html">
+        <img src="img/portfolioIcono.png" alt="Portfolio" />
+      </a>
+
+      <a href="contacto.html">
+        <img src="img/contactoIcono.png" alt="Contacto" />
+      </a>
+    </nav>
 
     <footer>
-        <p>Web personal de Carlos Rodríguez Ruiz</p>
+      <p>Web personal de Carlos Rodríguez Ruiz</p>
     </footer>
-</body>
+
+  </body>
 </html>

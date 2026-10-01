@@ -1,69 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Contacto</h1>
+      <div>
+        <h1>Contáctame</h1>
+      </div>
+      <img id="iconoPerfil" src="img/iconoPerfil.png" alt="" />
     </header>
+    <div id="div1">
+      <p>
+        Para ponerte en contacto conmigo a través del siguiente formulario: :
+      </p>
+    </div>
 
-    <section>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <div id="navegadorYcontenido">
+      <aside>
+        <nav id="navegador">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="biografia.html">Biografía</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a  class="subrayado" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div id="divForm">
+        <form>
+          <div id="formParte1">
+            <div id="nombrEmailTlfn">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+              />
 
-        <main>
-            <h2>Contacta conmigo</h2>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ejemplo@email.com"
+              />
 
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+              <label id="datos" for="telefono">Teléfono:</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="600 000 000"
+              />
+            </div>
+            <div id="motContacto">
+              <label for="motivo">Motivo de contacto:</label>
+              <select id="motivo" name="motivo">
+                <option>Consulta</option>
+                <option>Trabajo</option>
+                <option>Otro</option>
+              </select>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+              <p>¿Cómo prefieres que te contacte?</p>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="600 000 000">
+              <input type="radio" id="porEmail" name="contacto" value="email" />
+              <label for="porEmail">Email</label>
 
-                <label for="motivo">Motivo de contacto:</label>
-                <select id="motivo" name="motivo">
-                    <option>Consulta</option>
-                    <option>Trabajo</option>
-                    <option>Otro</option>
-                </select>
+              <input
+                type="radio"
+                id="porTelefono"
+                name="contacto"
+                value="telefono"
+              />
+              <label for="porTelefono">Teléfono</label>
+            </div>
+          </div>
 
-                <p>¿Cómo prefieres que te contacte?</p>
-
-                <input type="radio" id="porEmail" name="contacto" value="email">
-                <label for="porEmail">Email</label>
-
-                <input type="radio" id="porTelefono" name="contacto" value="telefono">
-                <label for="porTelefono">Teléfono</label>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-
-                <input type="checkbox" id="privacidad" name="privacidad">
-                <label for="privacidad">Acepto la política de privacidad</label>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </form>
-        </main>
-    </section>
-
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+          <div id = "aceptarPolitica">
+            <input type="checkbox" id="privacidad" name="privacidad" />
+            <label for="privacidad">Acepto la política de privacidad</label>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </div>
+        </form>
+        <img id="imgContactame" src="img/contactame.png" alt="" />
+      </div>
+    </div>
+    <nav id="navMovil">
+      <a href="index.html"><img src="img/inicioIcono.png" alt="" /></a>
+      <a href="biografia.html"><img src="img/biografiaIcono.png" alt="" /></a>
+      <a href="portfolio.html"><img src="img/portfolioIcono.png" alt="" /></a>
+      <img src="img/contactoIconoNegro.png" alt="" />
+    </nav>
     <footer>
-        <p>Web personal de Carlos Rodríguez Ruiz</p>
+      <p>Web personal de Carlos Rodríguez Ruiz</p>
     </footer>
-</body>
+  </body>
 </html>
