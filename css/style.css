@@ -1,7 +1,30 @@
-/*
- *  Inicio
- *
- */
+/* 1. Variables y configuración global. */
+
+/* No hay variables ni reglas globales propias en el CSS original. */
+
+/* 2. Reseteo y normalización. */
+
+/* Reservado en normalize.css, cargado antes de esta hoja. */
+
+/* 3. Layout general. */
+
+#contenidoPrimeraPag {
+  margin-left: 10%;
+}
+
+#navegadorYcontenido {
+  display: flex;
+}
+
+#divForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+/* 4. Encabezado. */
 
 header {
   display: flex;
@@ -12,10 +35,18 @@ header {
 
   background-color: rgb(87, 109, 64);
 }
+
+header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
 #iconoPerfil {
   height: 100px;
   width: 100px;
 }
+
+/* 5. Navegación. */
+
 #navegador {
   min-height: 100%;
 }
@@ -38,7 +69,7 @@ header {
   display: block;
   padding: 15px 20px;
   font-size: 1.5rem;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   text-decoration: none;
   color: white;
   border-radius: 12px;
@@ -48,6 +79,12 @@ header {
   text-decoration: underline;
 }
 
+#navMovil {
+  display: none;
+}
+
+/* 6. Secciones y contenido. */
+
 #div1 {
   text-align: center;
   color: beige;
@@ -55,12 +92,126 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#contenidoPrimeraPag {
-  margin-left: 10%;
+
+#biografia {
+  margin: 5%;
+  max-width: 900px;
 }
-#navegadorYcontenido {
+
+#biografia section {
+  margin-bottom: 40px;
+}
+
+#biografia h2 {
+  margin-bottom: 15px;
+}
+
+#biografia p {
+  line-height: 1.6;
+}
+
+#imagenBiografia {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+#hobies iframe {
+  width: 100%;
+  height: 400px;
+  width: 400px;
+}
+
+#hobies img {
+  height: 400px;
+  width: 400px;
+}
+
+#hobies {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+#hobies div {
+  margin: 10px 10px 10px 10px;
+}
+
+#hobies div h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: -15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: azure;
+  background-color: rgb(2, 0, 2);
+}
+
+#contactame {
+  padding-left: 5%;
+}
+
+#imgContactame {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 7. Formularios y botones. */
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+#formParte1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nombrEmailTlfn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nombrEmailTlfn label {
+  margin-left: -50px;
+  padding-left: 80px;
+}
+
+#nombrEmailTlfn input {
+  height: 20px;
+  width: 120px;
+}
+
+#motContacto {
+  padding-top: 3%;
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+}
+
+#motContacto select {
+  margin-right: 20px;
+  height: 20px;
+}
+
+#mensaje {
+  width: 600px;
+  margin-right: 150px;
+}
+
+#aceptarPolitica {
+  padding-top: 10px;
+  padding-right: 25%;
+  text-align: end;
+}
+
+/* 8. Pie de página. */
 
 footer {
   background-color: #222;
@@ -77,15 +228,7 @@ footer p {
   letter-spacing: 1px;
 }
 
-#navMovil {
-  display: none;
-}
-
-
-/*
- * Movil
- *
- */
+/* 9. Media queries. */
 
 @media (max-width: 800px) {
   #navMovil {
@@ -137,66 +280,6 @@ footer p {
   }
 }
 
-
-
-/*
- *  Biografia
- *
- */
-
-#biografia {
-  margin: 5%;
-  max-width: 900px;
-}
-
-#biografia section {
-  margin-bottom: 40px;
-}
-
-#biografia h2 {
-  margin-bottom: 15px;
-}
-
-#biografia p {
-  line-height: 1.6;
-}
-
-#imagenBiografia {
-  width: 400px;
-  max-width: 100%;
-  height: auto;
-}
-
-/*
- *  Portfolio
- *
- */
-#hobies iframe {
-  width: 100%;
-  height: 400px;
-  width: 400px;
-}
-#hobies img {
-  height: 400px;
-  width: 400px;
-}
-#hobies {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#hobies div {
-  margin: 10px 10px 10px 10px;
-}
-#hobies div h2 {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  margin-bottom: -15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: azure;
-  background-color: rgb(2, 0, 2);
-}
 @media (max-width: 800px) {
   #hobies {
     padding-bottom: 50px;
@@ -222,6 +305,7 @@ footer p {
     background-color: rgb(2, 0, 2);
   }
 }
+
 @media (max-width: 630px) {
   #hobies iframe {
     width: 100%;
@@ -244,73 +328,6 @@ footer p {
     background-color: rgb(2, 0, 2);
   }
 }
-
-/*
- *  Contacto
- *
- */
-#contactame {
-  padding-left: 5%;
-}
-#divForm {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 30px;
-}
-
-form {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-#imgContactame {
-  width: 40%;
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
-}
-
-#formParte1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-#nombrEmailTlfn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#nombrEmailTlfn label {
-  margin-left: -50px;
-  padding-left: 80px;
-}
-#nombrEmailTlfn input {
-  height: 20px;
-  width: 120px;
-}
-#motContacto {
-  padding-top: 3%;
-  padding-left: 33px;
-  display: flex;
-  align-items: center;
-}
-#motContacto select {
-  margin-right: 20px;
-  height: 20px;
-}
-#mensaje {
-  width: 600px;
-  margin-right: 150px;
-}
-#aceptarPolitica {
-  padding-top: 10px;
-  padding-right: 25%;
-  text-align: end;
-}
-
 
 @media (max-width: 800px) {
 
