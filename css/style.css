@@ -1,12 +1,5 @@
-/* 1. Variables y configuración global. */
 
-/* No hay variables ni reglas globales propias en el CSS original. */
-
-/* 2. Reseteo y normalización. */
-
-/* Reservado en normalize.css, cargado antes de esta hoja. */
-
-/* 3. Layout general. */
+/* 1. General. */
 
 #contenidoPrimeraPag {
   margin-left: 10%;
@@ -24,7 +17,7 @@
   gap: 30px;
 }
 
-/* 4. Encabezado. */
+/* 2. Encabezado. */
 
 header {
   display: flex;
@@ -45,7 +38,7 @@ header h1 {
   width: 100px;
 }
 
-/* 5. Navegación. */
+/* 3. Navegación. */
 
 #navegador {
   min-height: 100%;
@@ -83,7 +76,7 @@ header h1 {
   display: none;
 }
 
-/* 6. Secciones y contenido. */
+/* 4. Secciones y contenido. */
 
 #div1 {
   text-align: center;
@@ -158,7 +151,7 @@ header h1 {
   object-fit: contain;
 }
 
-/* 7. Formularios y botones. */
+/* 5. Formularios y botones. */
 
 form {
   padding: 20px;
@@ -211,7 +204,7 @@ form {
   text-align: end;
 }
 
-/* 8. Pie de página. */
+/* 6. Pie de página. */
 
 footer {
   background-color: #222;
@@ -228,7 +221,7 @@ footer p {
   letter-spacing: 1px;
 }
 
-/* 9. Media queries. */
+/* 7. Media queries. */
 
 @media (max-width: 800px) {
   #navMovil {
@@ -244,7 +237,7 @@ footer p {
     width: 90%;
     height: 70px;
 
-    background-color: #222;
+    background-color: #34671e;
     border-radius: 20px;
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
@@ -256,25 +249,18 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 55px;
     height: 55px;
-
     border-radius: 50%;
-
     transition: 0.3s;
   }
-
-
   #navMovil img {
     width: 35px;
     height: 35px;
   }
-
   #navegador {
     display: none;
   }
-
   footer {
     padding-bottom: 110px;
   }
@@ -330,43 +316,35 @@ footer p {
 }
 
 @media (max-width: 800px) {
-
   #navegadorYcontenido {
     display: block;
   }
-
   #divForm {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-
   form {
     display: flex;
     flex-direction: column;
     padding: 10px;
   }
-
   #formParte1 {
     display: flex;
     flex-direction: column;
   }
-
   #nombrEmailTlfn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-
   #nombrEmailTlfn label {
     margin-top: 10px;
   }
-
   #nombrEmailTlfn input {
     width: 95%;
     height: 30px;
   }
-
   #motContacto {
     display: flex;
     flex-direction: column;
@@ -374,29 +352,24 @@ footer p {
     padding-left: 0;
     padding-top: 20px;
   }
-
   #motContacto select {
     margin-bottom: 10px;
   }
-
   #mensaje {
     width: 95%;
     height: 100px;
     margin-right: 0;
   }
-
   #aceptarPolitica {
     padding-right: 0;
     text-align: left;
     padding-top: 10px;
   }
-
   #imgContactame {
     width: 90%;
     max-width: 300px;
     margin: 20px auto;
   }
-
   footer {
     padding-bottom: 80px;
   }
